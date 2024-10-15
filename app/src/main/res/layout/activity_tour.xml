@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tour.Tour">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/toptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/lightblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@id/imgNotification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/notification" />
+
+        <ImageView
+            android:id="@id/imgUserlogin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tour"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/lightblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:id="@id/bottomtoolbar">
+
+        <LinearLayout
+            android:id="@id/groupNhansu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@id/bottomtoolbar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@id/imgNhansu"
+                android:layout_width="40dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/nhansu" />
+
+            <TextView
+                android:id="@id/tvNhansu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Nhân sự"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgNhansu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/groupTour"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/groupNhansu"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@id/imgTour"
+                android:layout_width="40dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@id/groupTour"
+                app:layout_constraintTop_toTopOf="@id/groupTour"
+                app:srcCompat="@drawable/tour" />
+
+            <TextView
+                android:id="@id/tvTour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:paddingLeft="10dp"
+                android:text="Tour"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgNhansu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/groupTaichinh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/groupTour"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@id/imgTaichinh"
+                android:layout_width="40dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@id/groupTour"
+                app:layout_constraintTop_toTopOf="@id/groupTour"
+                app:srcCompat="@drawable/taichinh" />
+
+            <TextView
+                android:id="@id/tvTaichinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Tài chính"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgNhansu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/groupLichtrinh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/groupTaichinh"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@id/imgLichtrinh"
+                android:layout_width="40dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@id/groupLichtrinh"
+                app:layout_constraintTop_toTopOf="@id/groupLichtrinh"
+                app:srcCompat="@drawable/lichtrinh" />
+
+            <TextView
+                android:id="@id/tvLichtrinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Lịch trình"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgNhansu" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="login">Đăng nhập</string>
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="forget"><u>Quên mật khẩu?</u></string>
+    <string name="forgotten">Quên mật khẩu</string>
+    <string name="email">Email:</string>
+    <string name="new_pass">Mật khẩu mới: </string>
+    <string name="new_password">New Password</string>
+    <string name="repass">Nhập lại mật khẩu:</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="notification"><b>Thông báo</b></string>
+    <string name="head"><b>Tiêu đề: </b></string>
+    <string name="body"><b>Nội dung: </b></string>
+    <string name="dashboard"><b>Dashboard</b></string>
+    <string name="nhansu"><b>Nhân sự</b></string>
+    <string name="taichinh"><b>Tài chính</b></string>
+    <string name="lichtrinh"><b>Lịch trình</b></string>
+    <string name="tour"><b>Tour</b></string>
+</resources>
